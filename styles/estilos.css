@@ -1,0 +1,241 @@
+.grid__container{
+    font-family: 'Open Sans', sans-serif;
+   background-image: url(../imagenes/fondopag.jpg);
+   background-attachment: fixed;
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: auto auto auto auto;
+   gap: 1px color solid black;
+   grid-template-areas: "cabeza cabeza cabeza"
+                        "grid__bienvenidos grid__bienvenidos grid__bienvenidos"
+                       "contenido contenido contenido"
+                       "pie pie pie";
+}
+.grid__container >*{
+   border: 1px solid rgb(44, 41, 41);
+   margin: 0.5rem;
+}
+.cabeza{
+   grid-area: cabeza;
+}
+.grid__bienvenidos{
+   grid-area: grid__bienvenidos;
+}
+.contenido{
+   grid-area: contenido;
+}
+.pie{
+   grid-area: pie;
+}
+.fondo__header{
+   background: linear-gradient(rgba(194, 182, 182, 0.10),rgba(194, 182, 182, 0.10)),url(../imagenes/Prueba__fondo.jpg);
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding: 10rem;
+}
+.estilo__nav{
+   display: grid;
+   grid-template-columns: auto auto auto auto auto;
+   justify-items: center;
+}
+.menu{
+   display: flex;
+   list-style-type: none;
+   border:1px solid;
+   border-radius: 5px;
+}
+.menu:hover{
+   transform: scale(2,2);
+
+}
+.position__nav{
+   transform: translate(50px,-100px);
+}
+.menu a{
+   text-decoration: none;
+   background-color: rgb(6, 112, 112);
+   color:white;
+   padding: 1rem;
+   font-weight: 500;
+}
+.estilo__titulo{
+   font-size: 50px;
+   font-style: oblique;
+   font-weight: bold;
+   color: aliceblue;
+   margin-block-start: 0.1rem;
+   margin-block-end: 0.1rem;
+   text-align: center;
+}
+.animacion__bienvenidos{
+   animation-name: bienvenidos;
+   animation-iteration-count: infinite;
+   animation-duration: 20s;
+   animation-delay: 1s;
+}
+@keyframes bienvenidos{
+   0%{
+      background-image: url(../imagenes/bienvenidos.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   25%{
+      background-image: url(../imagenes/suc1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   50%{
+      background-image: url(../imagenes/cerveza.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   75%{
+      background-image: url(../imagenes/sirloin.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+   100%{
+      background-image: url(../imagenes/suc2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+}
+
+table{
+   margin:0 auto
+   
+}
+.bandera{
+   align-items: center;
+}
+.bandera__flex{
+   display: flex;
+   justify-content: center;
+}
+.bandera__flex p{
+   color: aliceblue;
+}
+.color__blanco p{
+   color: black;
+}
+.bandera__verde{
+   background-color: rgb(22, 136, 22);
+   padding: 1.5rem;
+}
+.bandera__blanco{
+   background-color: rgb(235, 235, 235);
+   padding: 1.5rem;
+}
+.bandera__rojo{
+   background-color: rgb(218, 76, 76);
+   padding: 1.5rem;
+}
+.titulo__menu{
+   text-align: center;
+   font-size: 3rem;
+}
+   
+.menu__seccion{
+   display: grid;
+   grid-template-columns: 50% 50%;
+   align-items: center;
+   justify-items: center;
+   text-align: center;
+   padding: 1rem;
+}
+.menu__seccion img{
+   width: 20rem;
+   height: 20rem;
+}
+.titulo__platillo{
+   font-size: 1.8rem;
+   font-style: oblique;
+   font-weight: bold;
+   text-align: center;
+}
+.acompanamiento{
+   background-image: url(./imagenes/papa-al-horno.jpg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 15rem;
+}
+
+.corte{
+   background-image: url(./imagenes/sirloin.png);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 15rem;
+}
+
+.bebida{
+   background-image: url(./imagenes/agua-fruta.jpeg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 15rem;
+}
+
+.bebidaalcohol{
+   background-image: url(./imagenes/cerveza.jpeg);
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: 15rem;
+}
+.estilo__footer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 0.5rem;
+   background-color: rgb(27, 180, 180);
+   font-size: 1rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+.grid div:hover{
+   background-color: aliceblue;
+   transform: scale(1.2,1.2);
+   
+}
+.grid img{
+   max-width: 300px;
+   max-height: 300px;
+}
+.grid p{
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+}
+.bienvenidos{
+   align-items: center;
+   justify-items: center;
+}
+.bienvenidos{
+   color: aliceblue;
+   height: 20rem;
+}
+.bienvenidos img{
+   max-width: 350px;
+   max-height: 350px;
+}
+.estilo__bienvenidos{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+}
+.indicadores__bandera{
+   text-align: right;
+}
+.estilo__recomendaciones{
+   text-align: center;
+}
+
+
+
+    

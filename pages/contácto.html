@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Chef´s</title>
+    <link rel="Shortcut Icon" href="../imagenes/logo-1-copia.png">
+    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fondopag">
+
+    <header class="cabeza fondo__header">
+           
+        <nav>
+            <div class="estilo__nav">
+                        <div class="menu">
+                            <a href="../index.html">Inicio</a>
+                        </div>
+                        <div class="menu">
+                            <a href="../pages/quienes-somos.html">¿Quienes somos?</a>
+                        </div>
+                        <div class="menu">
+                            <a href="../pages/menu.html">Menú</a>
+                        </div>
+                        <div class="menu">
+                            <a href="../pages/sucursales.html">Sucursales</a>
+                        </div>
+                        <div class="menu"> 
+                            <a href="../pages/contácto.html">Contácto</a>
+                        </div>
+            </div>
+        </nav>
+    <h1 class="estilo__titulo">Restaurante Chef´s</h1>
+
+
+
+</header>
+
+    <main>
+        <div class="grid__container">
+
+    
+            <section>
+                <p>
+                    ¡No te quedes con la duda! Parte de nuestra misión es ofrecer a los clientes una experiencia
+                    única, por lo que tus sugerencias, quejas o dudas son siempre bienvenidas, ya que nos sirven como
+                    herramienta para mejorar y ofrecer el servicio más óptimo posible.
+                    <br>
+                    <br>
+                    Por favor, ayúdanos a llenar el siguiente formulario y nos pondremos en contácto
+                    a la brevedad.
+                </p>
+            
+                <form action="">
+                    <fieldset>
+                        <legend> Información de contácto</legend>
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu nombre" required>
+                        <!-- Solo por ahora después lo sacamos-->
+                        <br>
+                        <br>
+                        <label for="Apellido"> Apellido </label>
+                        <input type="text" name="Apellido" id="Apellido" placeholder="Ingresa tu apellido" required>
+                        <br>
+                        <br>
+                        <label for="Correo"> Correo electrónico </label>
+                        <input type="email" name="Correo" id="Correo" placeholder="Ingresa tu mail" required>
+                        <br>
+                        <br>
+                        <label for="Número"> Número </label>
+                        <input type="Número" name="num" id="Número" placeholder="Ingresa un número" required>
+                        <br>
+                        <br>
+                        <!-- Menú desplegable-->
+                        <label for="Motivo de contácto"> Motivo de contácto</label>
+                        <br>
+                        <select name="Motivo de contácto" id="talle">
+                            <option value=""> Selecciona un motivo</option>
+                            <option value="Quejas"> Quejas</option>
+                            <option value="Sugerencias"> Sugerencias</option>
+                            <option value="Cotización para eventos"> Cotización para eventos</option>
+                        </select>
+                        <br>
+                        <br>
+                
+                        <!-- Checkbox-->
+                        <div> ¿Por cuál medio prefieres que te contactemos?</div>
+                        <input type="Checkbox" name="cbox1"> Llamada
+                        <input type="Checkbox" name="cbox2"> Correo
+                        <input type="Checkbox" name="cbox3"> Mensaje
+                
+                        <br>
+                        <label for="¿Desde donde nos contactas?"> ¿Desde donde nos contactas?</label>
+                        <br>
+                        <input type="radio" name="Edo. México"> Edo. México
+                        <input type="radio" name="Ciudad de México"> Ciudad de México
+                        <input type="radio" name="Otra parte de la república"> Otra parte de la república
+                        <br>
+                
+                        <input type="submit">
+                
+                    </fieldset>
+                </form>
+
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="estilo__footer">
+
+        <div>
+            <p>Búscanos en nuestras redes sociales</p>
+        </div>
+        <div>
+            <img src="../imagenes/Icono-facebook.svg">
+        </div>
+        <div>
+            <img src="../imagenes/icono-instragram.svg">
+        </div>
+        <div>
+            <img src="../imagenes/icono-whatsapp.svg">
+        </div>
+        <div>
+        <img src="../imagenes/icono-pinterest.svg">
+        </div>
+        
+        </div>
+    </footer>
+    
+</body>
+</html>
